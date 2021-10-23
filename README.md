@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Reto: Conversor de divisas
 
 Usted ha sido contratado por la empresa de Valores & Servicios para desarrollar una aplicación de conversor de divisas de las monedas principales a nivel mundial, 
@@ -38,3 +39,7 @@ Para realizar la entrega de esta actividad debe realizar los siguientes pasos:
   
 
 
+=======
+# Conversor-de-Divisas
+Esta es una sencilla aplicación de Divisas hecha en javascript
+>>>>>>> e0a170bc86167d563a2013d657c1472637cba0b2
