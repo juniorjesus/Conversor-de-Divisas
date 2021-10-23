@@ -1,0 +1,148 @@
+:root {
+  --primary-color: #5a5ccf;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color:#45e7f3b6;
+  font-family: Arial;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  margin: 0;
+  padding: 28px;
+}
+
+h1 {
+  color: rgba(120,158,268, 0.9);
+}
+
+p {
+  text-align: center;
+}
+
+.moneda-img {
+  width: 200px;
+}
+
+.moneda {
+  padding: 28px 0;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+
+} 
+
+.moneda select {
+  padding: 18px 35px 18px 15px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: 1px solid #dedede;
+  border-radius: 10%;
+  font-size: 16px;
+  background: #f8f5f5;
+ 
+  background-image: url("https://w7.pngwing.com/pngs/846/205/png-transparent-arrow-computer-icons-symbol-inverted-triangle-angle-rectangle-triangle-thumbnail.png");
+  background-position: right 10px top 50%, 0, 0;
+  background-size: 16px auto, 100%;
+  background-repeat: no-repeat;
+}
+
+.moneda input {
+  border: 0;
+  background: transparent;
+  font-size: 36px;
+  text-align: right;
+}
+
+.swap-rate-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rate {
+  color: #090b97;
+  font-size: 14px;
+  padding: 0 10px;
+  display: flex;
+  text-align: center;
+}
+
+select:focus,
+input:focus,
+button:focus {
+  outline: 0;
+}
+
+@media (max-width: 600px) {
+  .moneda input {
+    width: 280px;
+  }
+}
+
+/* Boton de convertir */
+.btn {
+  -moz-box-shadow: 0px 10px 14px -7px #276873;
+  -webkit-box-shadow: 0px 10px 14px -7px #276873;
+  box-shadow: 0px 10px 14px -7px #276873;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #2693c5),
+    color-stop(1, #33659e)
+  );
+  background: -moz-linear-gradient(center top, #599bb3 5%, #408c99 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#599bb3', endColorstr='#408c99');
+  background-color: #599bb3;
+  -webkit-border-top-left-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  border-top-right-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  border-bottom-right-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-bottom-left-radius: 10px;
+  text-indent: 0;
+  display: inline-block;
+  color: #ffffff;
+  font-family: arial;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: normal;
+  height: 55px;
+  line-height: 55px;
+  width: 100px;
+  text-decoration: none;
+  text-align: center;
+  text-shadow: 0px 1px 0px #813d8a;
+}
+.btn:hover {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #5c72b9),
+    color-stop(1, #576fc0)
+  );
+  background: -moz-linear-gradient(center top, #72a3ac 5%, #9fbcc7 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#408c99', endColorstr='#599bb3');
+  background-color: #6acfe0;
+}
+
+/*en resumidas cuentas aca la propiedad de Css active me va a mover hacia arriba 10px luego de hacer clic*/
+.btn:active {
+  position: relative;
+  top: 1.5px;
+}

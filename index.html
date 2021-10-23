@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Divisas</title>
+
+    <!-- Estilos css -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <img src="img/logo.png" alt="" class="moneda-img" />
+    <h1>Conversor de Divisas</h1>
+    <p>Elige tu moneda y los montos para obtener el tipo de cambio.</p>
+
+    <div class="container">
+        <div class="moneda">
+            <select id="moneda-uno">
+               
+                <option value="COP">Peso Colombiano</option>
+                <option value="EUR">Euro</option>
+                <option value="GBP">Libras Esterlinas</option>
+                <option value="MXN">Peso Mexicano</option>
+                <option value="USD" selected>Dólar</option>
+               
+            </select>
+            <input type="number" id="cantidad-uno" placeholder="0" value="1" />
+        </div>
+
+        <div class="swap-rate-container">
+            <div class="btn" id="swap">
+                Convertir
+            </div>
+            <div class="rate" id="rate"></div>
+        </div>
+
+        <div class="moneda">
+            <select id="moneda-dos">
+                <option value="COP">Peso Colombiano</option>
+                <option value="EUR" selected>Euro</option>
+                <option value="GBP">Libras Esterlinas</option>
+                <option value="MXN">Peso Mexicano</option>
+                <option value="USD">Dólar</option>
+              
+            </select>
+            <input type="number" id="cantidad-dos" placeholder="0" />
+        </div>
+    </div>
+
+    <!-- javascript personalizado -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
